@@ -2,7 +2,7 @@ import os,cv2
 import pickle,face_recognition
 
 def main_encoder():
-    folderPath = r'Images'
+    folderPath = r'C:\Users\quliy\Desktop\face_rec\Images'
     pathList = os.listdir(folderPath)
     print(pathList)
     imgList = []
@@ -34,9 +34,5 @@ def main_encoder():
     pickle.dump(encodeListKnownWithIds, file)
     file.close()
     print("File Saved")
-
-
-if __name__ == '__main__':
-    print('Main olaraq calisdirildi')
-    main_encoder()
+    
 
